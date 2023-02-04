@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 47dc557325f102841997ee52e3bf962b
+guid: 939efae8636daba4c84ace918cded353
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: NewPlayerRight_0
+      name: NewPlayerLeft_0
       rect:
         serializedVersion: 2
         x: 0
@@ -131,14 +131,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad8c451c8dec3a243b70c7d9c7c7b3b6
-      internalID: 1211268033
+      spriteID: c153679c58a258f4091cb2472ccd3c26
+      internalID: -2122366141
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NewPlayerRight_1
+      name: NewPlayerLeft_1
       rect:
         serializedVersion: 2
         x: 64
@@ -152,14 +152,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71ae4be6ef55ade4b8259794d01cba33
-      internalID: -1453057633
+      spriteID: 6b9704cca5d857645a2caf50d9f8c067
+      internalID: 1405141728
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NewPlayerRight_2
+      name: NewPlayerLeft_2
       rect:
         serializedVersion: 2
         x: 128
@@ -173,14 +173,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9cfbd7546728471489824c8990b1952d
-      internalID: -1144337798
+      spriteID: c0569a70b301e5e44828260567d2e903
+      internalID: -875479419
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NewPlayerRight_3
+      name: NewPlayerLeft_3
       rect:
         serializedVersion: 2
         x: 192
@@ -194,8 +194,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b66c430987325d140937ad2503ae9f8f
-      internalID: -672416561
+      spriteID: 1bab8c3d7dbf99f468ad7bcb1ed42283
+      internalID: -2104911307
       vertices: []
       indices: 
       edges: []
@@ -211,10 +211,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      NewPlayerRight_1: -1453057633
-      NewPlayerRight_2: -1144337798
-      NewPlayerRight_3: -672416561
-      NewPlayerRight_0: 1211268033
+      NewPlayerLeft_3: -2104911307
+      NewPlayerLeft_2: -875479419
+      NewPlayerLeft_0: -2122366141
+      NewPlayerLeft_1: 1405141728
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
