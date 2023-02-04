@@ -35,7 +35,7 @@ public class InteractObject : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //REPLACE "Player" with actual PlayerOject
-        if (collision.gameObject.name.Equals("Placeholder"))
+        if (collision.gameObject.name.Equals("Character"))
         {
             //Interact allowed becomes true = object active
             InteractText.gameObject.SetActive(true);
@@ -47,7 +47,7 @@ public class InteractObject : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         //REPLACE "Player" with actual PlayerOject
-        if (collision.gameObject.name.Equals("Placeholder"))
+        if (collision.gameObject.name.Equals("Character"))
         {
             //InteractAllowed becomes false = object NOT active
             InteractText.gameObject.SetActive(false);
