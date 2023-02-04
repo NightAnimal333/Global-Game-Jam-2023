@@ -5,7 +5,10 @@ using UnityEngine;
 public class CharacterMovement : MonoBehaviour
 {
     enum State{
-        WalkForward,
+        WalkDown,
+        WalkUp,
+        WalkLeft,
+        WalkRight,
         Idle
     }
 
@@ -42,14 +45,14 @@ public class CharacterMovement : MonoBehaviour
         {
 
             velocity = new Vector2(1, 0) + velocity;
-            state = State.WalkForward;
+            state = State.WalkRight;
             moving = true;
 
         } if (Input.GetKey("a"))
         {
 
             velocity = new Vector2(-1, 0) + velocity;
-            state = State.WalkForward;
+            state = State.WalkLeft;
             moving = true;
 
 
@@ -57,7 +60,7 @@ public class CharacterMovement : MonoBehaviour
         {
 
             velocity = new Vector2(0, 1) + velocity;
-            state = State.WalkForward;
+            state = State.WalkUp;
             moving = true;
 
 
@@ -65,17 +68,27 @@ public class CharacterMovement : MonoBehaviour
         {
 
             velocity = new Vector2(0, -1) + velocity;
-            state = State.WalkForward;
+            state = State.WalkDown;
             moving = true;
 
         } if (!moving) {
             state = State.Idle;
         }
 
-        if (state == State.WalkForward){
-                animator.SetBool("is_walk_forward", true);
-            } else {
-                animator.SetBool("is_walk_forward", false);
+        animator.SetBool("is_walk_down", false);
+        animator.SetBool("is_walk_up", false);
+        animator.SetBool("is_walk_left", false);
+        animator.SetBool("is_walk_right", false);
+
+
+        if (state == State.WalkDown){
+                animator.SetBool("is_walk_down", true);
+        } else if (state == State.WalkUp){
+                animator.SetBool("is_walk_up", true);
+        } else if (state == State.WalkRight){
+                animator.SetBool("is_walk_right", true);
+        } else if (state == State.WalkLeft){
+                animator.SetBool("is_walk_left", true);
         }
         // if (oldState != state){
 
