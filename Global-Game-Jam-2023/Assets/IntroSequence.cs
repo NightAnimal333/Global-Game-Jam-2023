@@ -13,20 +13,33 @@ public class IntroSequence : MonoBehaviour
 
     private float elapsedTime;
     private Vector3 startPosition;
+
+    public bool started = false;
     // Start is called before the first frame update
     void Start()
     {
 
+
+        
+    }
+
+    public void PlayIntro(){
         elapsedTime = 0;
         startPosition = gameObject.transform.position;
 
         character.SetActive(false);
-        
+
+        engineSound.Play();
+        started = true;
     }
 
     // Update is called once per frame
     void Update()
     {
+
+        if (!started){
+            return;
+        }
 
         elapsedTime += Time.deltaTime;
         gameObject.transform.position = Vector3.Lerp(startPosition, destination, (elapsedTime/sequenceDuration));
