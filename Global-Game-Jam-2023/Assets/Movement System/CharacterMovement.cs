@@ -103,7 +103,6 @@ public class CharacterMovement : MonoBehaviour
 
     void FixedUpdate(){
 
-        Debug.Log(velocity);
         rigidbody2d.MovePosition(rigidbody2d.position + (velocity * SPEED) * Time.deltaTime);
 
     }

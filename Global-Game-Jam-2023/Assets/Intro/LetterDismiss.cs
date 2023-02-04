@@ -19,6 +19,7 @@ public class LetterDismiss : MonoBehaviour
     }
 
     public void onClick(){
+        Debug.Log("HALLO BABY");
         intro.PlayIntro();
         canvas.enabled = false;
     }
