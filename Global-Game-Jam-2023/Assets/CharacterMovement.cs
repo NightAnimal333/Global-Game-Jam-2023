@@ -9,12 +9,18 @@ public class CharacterMovement : MonoBehaviour
         Idle
     }
 
+    public float SPEED;
+
     // External object references
     public Animator animator;
+    public Rigidbody2D rigidbody2d;
+
 
     // Internal variables
     private State state;
     private State oldState;
+
+    private Vector2 velocity;
 
 
     // Start is called before the first frame update
@@ -26,42 +32,66 @@ public class CharacterMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        velocity = new Vector2(0, 0);
+
         oldState = state;
-        if (Input.GetKeyDown("w"))
+
+        bool moving = false; // This is trash code I am sorry
+        if (Input.GetKey("d"))
         {
 
+            velocity = new Vector2(1, 0) + velocity;
             state = State.WalkForward;
+            moving = true;
 
-        } else if (Input.GetKeyDown("s"))
+        } if (Input.GetKey("a"))
         {
 
+            velocity = new Vector2(-1, 0) + velocity;
             state = State.WalkForward;
+            moving = true;
 
 
-        } else if (Input.GetKeyDown("a"))
+        } if (Input.GetKey("w"))
         {
 
+            velocity = new Vector2(0, 1) + velocity;
             state = State.WalkForward;
+            moving = true;
 
 
-        } else if (Input.GetKeyDown("d"))
+        } if (Input.GetKey("s"))
         {
 
+            velocity = new Vector2(0, -1) + velocity;
             state = State.WalkForward;
+            moving = true;
 
-        } else {
+        } if (!moving) {
             state = State.Idle;
         }
 
-        Debug.Log(state);
-        if (oldState != state){
-
-            if (state == State.WalkForward){
+        if (state == State.WalkForward){
                 animator.SetBool("is_walk_forward", true);
             } else {
                 animator.SetBool("is_walk_forward", false);
-            }
-
         }
+        // if (oldState != state){
+
+        //     if (state == State.WalkForward){
+        //         animator.SetBool("is_walk_forward", true);
+        //     } else {
+        //         animator.SetBool("is_walk_forward", false);
+        //     }
+
+        // }
+    }
+
+    void FixedUpdate(){
+
+        Debug.Log(velocity);
+        rigidbody2d.MovePosition(rigidbody2d.position + (velocity * SPEED) * Time.deltaTime);
+
     }
 }
