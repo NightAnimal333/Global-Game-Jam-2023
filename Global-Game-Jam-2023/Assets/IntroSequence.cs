@@ -9,6 +9,8 @@ public class IntroSequence : MonoBehaviour
     public Vector3 destination;
     public float sequenceDuration;
 
+    public AudioSource engineSound;
+
     private float elapsedTime;
     private Vector3 startPosition;
     // Start is called before the first frame update
@@ -34,6 +36,7 @@ public class IntroSequence : MonoBehaviour
             mainCamera.transform.localPosition = new Vector3(0, 0, -10);
 
             character.SetActive(true);
+            engineSound.Stop();
         }
         
     }
