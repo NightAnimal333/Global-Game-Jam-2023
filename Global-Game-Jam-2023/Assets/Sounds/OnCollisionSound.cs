@@ -44,7 +44,8 @@ public class OnCollisionSound : MonoBehaviour
         if (collision.gameObject.name.Equals("Character"))
         {
             //InteractAllowed becomes false = object NOT active
-             audioSource.enabled = !audioSource.enabled;
+             //audioSource.enabled = !audioSource.enabled;
+             audioSource.Stop();
 
         }
 
