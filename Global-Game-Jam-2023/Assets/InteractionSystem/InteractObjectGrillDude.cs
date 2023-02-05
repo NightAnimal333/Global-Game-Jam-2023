@@ -19,6 +19,9 @@ public class InteractObjectGrillDude : MonoBehaviour
     public GameManager gameManager;
 
     public TextMeshProUGUI text;
+
+    public GameObject endScreen;
+
     public TextMeshProUGUI button;
 
     private bool InteractAllowed; 
@@ -81,7 +84,7 @@ public class InteractObjectGrillDude : MonoBehaviour
             }
         } else {
             gameManager.PlayKidRealTalk();
-            Destroy(gameObject);
+            StartCoroutine(ExampleCoroutine());
         }
 
 
@@ -100,6 +103,16 @@ public class InteractObjectGrillDude : MonoBehaviour
 
         text.text = "Hello, I am Kevin. Who are you? Welcome to our community!";
         button.text = "I feel welcome here!";
+
+    }
+
+    IEnumerator ExampleCoroutine(){
+
+        yield return new WaitForSeconds(10);
+
+        endScreen.SetActive(true);
+
+        Destroy(gameObject);
 
     }
 }

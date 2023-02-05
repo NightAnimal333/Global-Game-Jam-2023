@@ -76,5 +76,8 @@ public class GameManager : MonoBehaviour
 
         progressBar.IncreaseKnowledge(25);
 
+
     }
+
+
 }
