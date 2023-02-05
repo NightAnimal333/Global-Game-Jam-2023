@@ -6,6 +6,9 @@ public class titleScript : MonoBehaviour
 {
 
     public GameObject letterCanvas;
+    public AudioSource LetterSound;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,12 +21,20 @@ public class titleScript : MonoBehaviour
 
         if (Input.GetKey("space"))
         {
-
             letterCanvas.SetActive(true);
             Destroy(gameObject);
 
+        if(letterCanvas == true)
+        {
+            PlaySound();
+
         }
 
-        
+        } 
+    }
+
+    public void PlaySound()
+    {
+        LetterSound.Play();
     }
 }
