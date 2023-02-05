@@ -246,6 +246,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3100837056292528808, guid: 06db8aaad513e034b8523a0b5178fc4b, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 180c14aa201e149b6baace6fd7fb312f, type: 3}
     - target: {fileID: 3100837056467496376, guid: 06db8aaad513e034b8523a0b5178fc4b, type: 3}
       propertyPath: m_Name
       value: buss
@@ -16090,7 +16094,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &482297115
 GameObject:
@@ -17370,7 +17374,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &962029145
 GameObject:
