@@ -8,6 +8,7 @@ public class IntroSequence : MonoBehaviour
     public GameObject mainCamera;
     public Vector3 destination;
     public float sequenceDuration;
+    public GameObject sliderCanvas;
 
     public AudioSource engineSound;
 
@@ -19,7 +20,7 @@ public class IntroSequence : MonoBehaviour
     void Start()
     {
 
-
+       // sliderCanvas.enabled = false;
         
     }
 
@@ -50,6 +51,8 @@ public class IntroSequence : MonoBehaviour
 
             character.SetActive(true);
             engineSound.Stop();
+
+            sliderCanvas.SetActive(true);
         }
         
     }
