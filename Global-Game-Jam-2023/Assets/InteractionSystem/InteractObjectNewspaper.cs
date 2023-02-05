@@ -12,10 +12,12 @@ HOW TO USE
 4. Make sure player has Circle Collider 2D and box collider 2d with box collider on Is Trigger
 **/
 
-public class InteractObject : MonoBehaviour
+public class InteractObjectNewspaper : MonoBehaviour
 {
     private bool InteractAllowed; 
     [SerializeField] private TMP_Text InteractText;
+
+    public GameManager gameManager;
     
     // Start is called before the first frame update
     private void Start()
@@ -57,16 +59,17 @@ public class InteractObject : MonoBehaviour
     }
 
     //if interact allows, then this method happens
-    protected void Interact()
+    private void Interact()
     {
 
-
+        
     
+    gameManager.PlayNewspaper();
     //Could probably insert MiniGame trigger here?
+    Destroy(gameObject);
 
     //Placeholder code
-    Destroy(gameObject);
-    Debug.Log("I am parent class");
+    Debug.Log("I am newspaper baby");
 
     }
 }

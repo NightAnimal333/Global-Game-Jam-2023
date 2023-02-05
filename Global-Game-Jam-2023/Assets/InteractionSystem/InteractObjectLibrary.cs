@@ -12,7 +12,7 @@ HOW TO USE
 4. Make sure player has Circle Collider 2D and box collider 2d with box collider on Is Trigger
 **/
 
-public class InteractObject : MonoBehaviour
+public class InteractObjectLibrary : MonoBehaviour
 {
     private bool InteractAllowed; 
     [SerializeField] private TMP_Text InteractText;
@@ -65,8 +65,7 @@ public class InteractObject : MonoBehaviour
     //Could probably insert MiniGame trigger here?
 
     //Placeholder code
-    Destroy(gameObject);
-    Debug.Log("I am parent class");
+    Debug.Log("I am LIBRARYYYYY BAYBBBBBBYYYYYYY");
 
     }
 }
