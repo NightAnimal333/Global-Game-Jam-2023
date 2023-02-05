@@ -19,6 +19,11 @@ public class WordSearch : MonoBehaviour {
     public string selectedString = "";
     public List<GameObject> selected = new List<GameObject>();
 
+
+    // MY STUFF
+    public GameObject gameCamera;
+    public GameManager gameManager;
+
     private List<GameObject> tiles = new List<GameObject>();
     private GameObject temporary, backgroundObject;
     private int identified = 0;
@@ -44,6 +49,8 @@ public class WordSearch : MonoBehaviour {
     }
 
     void Start() {
+        gameCamera.SetActive(false);
+
         List<string> findLength = new List<string>();
         int count = 0;
 
@@ -174,6 +181,9 @@ public class WordSearch : MonoBehaviour {
         Debug.Log(identified);
         if (insertedWords.Count == identified){
             Debug.Log("Game is over");
+            gameCamera.SetActive(true);
+            Destroy(gameObject.transform.parent.gameObject);
+            gameManager.PlayLibrary();
         }
     }
 

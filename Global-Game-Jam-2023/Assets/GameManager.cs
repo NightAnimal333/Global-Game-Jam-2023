@@ -7,6 +7,10 @@ public class GameManager : MonoBehaviour
     private float progress;
     public GameObject minigame;
 
+    public ProgressBar progressBar;
+
+    public GameObject library;
+
     public Dictionary<string, bool> flags;
 
     // Start is called before the first frame update
@@ -29,6 +33,18 @@ public class GameManager : MonoBehaviour
     public void PlayNewspaper(){
 
         minigame.SetActive(true);
+
+        progressBar.IncreaseKnowledge(50);
+
+        library.SetActive(true);
+
+    }
+
+    public void PlayLibrary(){
+
+        //library.SetActive(false);
+
+        progressBar.IncreaseKnowledge(50);
 
     }
 }

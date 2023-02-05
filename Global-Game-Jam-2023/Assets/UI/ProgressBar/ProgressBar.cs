@@ -18,19 +18,19 @@ public class ProgressBar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (maxKnow < 100)
-        {
+        // if (maxKnow < 100)
+        // {
             
-            if (Input.GetKeyDown("down"))
-            {
-                print("update");
-                IncreaseKnowledge(20);
-            }
-        }
+        //     if (Input.GetKeyDown("down"))
+        //     {
+        //         print("update");
+        //         IncreaseKnowledge(20);
+        //     }
+        // }
        
     }
     
-    void IncreaseKnowledge(int val)
+    public void IncreaseKnowledge(int val)
     {
         //print("increase");
         print("slider val " + slider.value);

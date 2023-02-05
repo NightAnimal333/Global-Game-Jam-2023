@@ -14,6 +14,8 @@ HOW TO USE
 
 public class InteractObjectLibrary : MonoBehaviour
 {
+    public GameObject WSP;
+
     private bool InteractAllowed; 
     [SerializeField] private TMP_Text InteractText;
     
@@ -21,6 +23,7 @@ public class InteractObjectLibrary : MonoBehaviour
     private void Start()
     {
         InteractText.gameObject.SetActive(false);
+
         
     }
 
@@ -60,12 +63,13 @@ public class InteractObjectLibrary : MonoBehaviour
     protected void Interact()
     {
 
-
+        Destroy(gameObject);
     
-    //Could probably insert MiniGame trigger here?
+        //Could probably insert MiniGame trigger here?
+        WSP.SetActive(true);
 
-    //Placeholder code
-    Debug.Log("I am LIBRARYYYYY BAYBBBBBBYYYYYYY");
+        //Placeholder code
+        Debug.Log("I am LIBRARYYYYY BAYBBBBBBYYYYYYY");
 
     }
 }
