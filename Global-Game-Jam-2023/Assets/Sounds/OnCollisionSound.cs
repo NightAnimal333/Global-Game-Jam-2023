@@ -46,7 +46,6 @@ public class OnCollisionSound : MonoBehaviour
             //InteractAllowed becomes false = object NOT active
              audioSource.enabled = !audioSource.enabled;
 
-
         }
 
     }
