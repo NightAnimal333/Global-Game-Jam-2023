@@ -57,13 +57,16 @@ public class InteractObject : MonoBehaviour
     }
 
     //if interact allows, then this method happens
-    private void Interact()
+    protected void Interact()
     {
+
+
     
     //Could probably insert MiniGame trigger here?
 
     //Placeholder code
     Destroy(gameObject);
+    Debug.Log("I am parent class");
 
     }
 }
