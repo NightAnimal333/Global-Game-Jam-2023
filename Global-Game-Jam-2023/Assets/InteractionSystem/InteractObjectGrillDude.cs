@@ -81,6 +81,7 @@ public class InteractObjectGrillDude : MonoBehaviour
             }
         } else {
             gameManager.PlayKidRealTalk();
+            Destroy(gameObject);
         }
 
 

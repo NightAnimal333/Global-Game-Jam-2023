@@ -407,6 +407,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   letterCanvas: {fileID: 1797096363}
+  letterSound: {fileID: 813489257}
 --- !u!114 &157607883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -688,6 +689,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2224030413440248821, guid: 8858851451053d34492b2cbacb808e08, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508170378394466639, guid: 8858851451053d34492b2cbacb808e08, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 98d0d320d1799354d8acc656b879c80e, type: 3}
     - target: {fileID: 8508170379091894344, guid: 8858851451053d34492b2cbacb808e08, type: 3}
       propertyPath: m_Name
       value: Letter Canvas
@@ -1689,7 +1698,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &547195151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2264,7 +2273,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -19.4}
   m_SizeDelta: {x: 380, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &813031989
@@ -2293,8 +2302,7 @@ MonoBehaviour:
     sister again fills me with grief. I know you are very scared. From now on, you
     will live with me. Even though your parents are irreplaceable, you will be loved
     like my own son. On the other side of this letter you will find the train ticket
-    to (name of city). I will wait for you at the bus station. \r\n\r\nWith love,\r\nAunt
-    Helen"
+    to Rootsville. \n\r\nWith love,\r\nAunt Helen"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7e259492307724f4cb10fdf8ec2b79e3, type: 2}
   m_sharedMaterial: {fileID: 5164786695426873690, guid: 7e259492307724f4cb10fdf8ec2b79e3, type: 2}
@@ -2321,8 +2329,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 21
-  m_fontSizeBase: 21
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2357,7 +2365,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: -176.72527, z: 41.89044, w: -108.65334}
+  m_margin: {x: 0, y: -171.13777, z: 41.89044, w: -90.22321}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2371,6 +2379,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 813031987}
   m_CullTransparentMesh: 1
+--- !u!82 &813489257 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2560215555647461353, guid: 8858851451053d34492b2cbacb808e08, type: 3}
+  m_PrefabInstance: {fileID: 255778135}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &826787589
 PrefabInstance:
   m_ObjectHideFlags: 0
