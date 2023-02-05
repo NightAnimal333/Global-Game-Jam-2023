@@ -2322,6 +2322,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InteractText: {fileID: 69941444}
   gameManager: {fileID: 962029147}
+--- !u!1 &1606037706 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9184426105710610406, guid: 055d4b3a8c7c58e4da83c4b32a44e771, type: 3}
+  m_PrefabInstance: {fileID: 1701523058}
+  m_PrefabAsset: {fileID: 0}
+--- !u!19719996 &1606037710
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1606037706}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0
 --- !u!1001 &1701523058
 PrefabInstance:
   m_ObjectHideFlags: 0
