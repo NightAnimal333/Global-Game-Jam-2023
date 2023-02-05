@@ -452,55 +452,10 @@ MonoBehaviour:
   tile: {fileID: 100000, guid: df6a556ece0952e469642be48a8f36b8, type: 3}
   background: {fileID: 100000, guid: 6b9d78a6ff6a6154ba874b9a60a05a0f, type: 3}
   current: {fileID: 0}
-  defaultTint:
-    r: 0.039215688
-    g: 0.31038043
-    b: 0.6431373
-    a: 0
-  mouseoverTint:
-    r: 0.9558824
-    g: 0.20382789
-    b: 0.20382789
-    a: 0
-  identifiedTint:
-    r: 0.39705884
-    g: 1
-    b: 0.6507099
-    a: 0
+  defaultTint: {r: 0.039215688, g: 0.31038043, b: 0.6431373, a: 0}
+  mouseoverTint: {r: 0.9558824, g: 0.20382789, b: 0.20382789, a: 0}
+  identifiedTint: {r: 0.39705884, g: 1, b: 0.6507099, a: 0}
   ready: 0
   correct: 0
   selectedString: 
   selected: []
-  tiles: []
-  temporary: {fileID: 0}
-  backgroundObject: {fileID: 0}
-  identified: 0
-  time: 0
-  letters:
-  - a
-  - b
-  - c
-  - d
-  - e
-  - f
-  - g
-  - h
-  - i
-  - j
-  - k
-  - l
-  - m
-  - n
-  - o
-  - p
-  - q
-  - r
-  - s
-  - t
-  - u
-  - v
-  - w
-  - x
-  - y
-  - z
-  mark: 0

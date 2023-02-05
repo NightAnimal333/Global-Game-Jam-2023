@@ -18,7 +18,6 @@ public class CharacterMovement : MonoBehaviour
     public Animator animator;
     public Rigidbody2D rigidbody2d;
 
-
     // Internal variables
     private State state;
     private State oldState;
