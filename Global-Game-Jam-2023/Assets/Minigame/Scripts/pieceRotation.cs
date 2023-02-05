@@ -7,6 +7,8 @@ public class pieceRotation : MonoBehaviour
     Vector3 vector1 = new Vector3(0, 0, -90);
     Vector3 vector2 = new Vector3(0, 0, 90);
     public GameObject currentPiece;
+    public AudioSource SolvedSound;
+
 
     public GameManager gameManager;
 
@@ -37,7 +39,16 @@ public class pieceRotation : MonoBehaviour
             //print(gameManager.flags["newspaper_solved"]);
             gameManager.flags["newspaper_solved"] = true;
             //print(gameManager.flags["newspaper_solved"]);
-            Destroy(gameObject.transform.parent.gameObject);
+
+            Destroy(gameObject.transform.parent.gameObject, 1);
+
+        if(currentPiece == true)
+        {
+            SolvedSound.Play();
+
+        }
+
+
         }else
         {
             if (Input.GetKeyDown("right"))
@@ -108,4 +119,12 @@ public class pieceRotation : MonoBehaviour
         
     }
 }
+
+//Play sound
+public void PlaySound()
+{
+    SolvedSound.Play();
+        
+}
+
 }
