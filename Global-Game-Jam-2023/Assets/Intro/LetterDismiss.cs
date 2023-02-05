@@ -6,6 +6,9 @@ public class LetterDismiss : MonoBehaviour
 {
     public IntroSequence intro;
     public Canvas canvas;
+    public AudioSource ButtonPressed;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,5 +25,6 @@ public class LetterDismiss : MonoBehaviour
         Debug.Log("HALLO BABY");
         intro.PlayIntro();
         canvas.enabled = false;
+        ButtonPressed.Play();
     }
 }
